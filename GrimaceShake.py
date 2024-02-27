@@ -12,5 +12,22 @@ def weather():
     weatherConditions = random.choice(weatherForecast)
     return weatherConditions
 
+#Variable to call the weather() once VRS(Vehicle Response System) is determined
+weatherAlert = weather()
 
-print(weather())
+def vehicleResponseSystem():
+    if weatherAlert == "Snowing":
+        print("\nNational Weather Service has updated our alarm by 30 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 50mph.")
+    elif weatherAlert == "Blizzard":
+        print("\nNational Weather Service has updated our alarm by 45 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 40mph.")
+    elif weatherAlert == "Raining":
+        print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 60mph.")
+
+
+vehicleResponseSystem()

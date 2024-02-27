@@ -28,6 +28,20 @@ def vehicleResponseSystem():
         print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of", weatherAlert,
               "weather conditions.")
         print("VRS has been engaged only allowing you to drive 60mph.")
+    elif weatherAlert == "Foggy":
+        print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 60mph.")
+    elif weatherAlert == "Windy":
+        print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+    elif weatherAlert == "Icy":
+        print("\nNational Weather Service has updated our alarm by 60 minutes because of the forecast of", weatherAlert,
+              "weather conditions.")
+        print("VRS has been engaged only allowing you to drive 30mph.")
+    else:
+        print("\nNational Weather Service forecasts", weatherAlert,"weather conditions.")
+        print("VRS has been disengaged! Drive at your own risk.")
 
 
 vehicleResponseSystem()
